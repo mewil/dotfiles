@@ -1,0 +1,20 @@
+- defaults:
+    link:
+      create: true
+      force: true
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.dotfiles: ''
+    # Shell
+    ~/.aliases.sh: shell/aliases.sh
+    ~/.prompt.sh: shell/prompt.sh
+    ~/.zshrc: shell/zshrc
+    # Git
+    ~/.gitconfig: git/.gitconfig
+    ~/.gitignore: git/.gitignore
+    
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
