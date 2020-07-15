@@ -9,6 +9,7 @@ export CLICOLOR=1
 # PATH
 export GOPATH=$HOME/go/
 export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$HOME/.cargo/bin
 export PATH=$PATH:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin
 export PATH=$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/opt/X11/bin:/Applications/Server.app/Contents/ServerRoot/usr/bin
 export PATH=$PATH:/Applications/Server.app/Contents/ServerRoot/usr/sbin:/Library/Frameworks/Mono.framework/Versions/Current/Commands
