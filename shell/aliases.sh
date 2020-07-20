@@ -1,5 +1,8 @@
 alias tor='nohup /usr/local/bin/tor &'
-alias gc='git clone'
+unalias gc
+function gc() {
+    git clone ${1} && cd $(echo ${1} | sed 's:.*/::')
+}
 alias gs='git status'
 alias ga='git add . && gs'
 alias gpl='git pull'
@@ -14,11 +17,11 @@ alias gnb='git checkout -b'
 alias gch='git checkout'
 alias gd='git diff'
 unalias gcm
-gcm() {
+function gcm() {
     git commit -m "${1}"
 }
 unalias md
-md() {
+function md() {
     mkdir ${1} && cd ${1}
 }
 alias t="tree -I '.git' -L 2 -Ca -I 'node_modules' -I '.git'"
@@ -28,12 +31,13 @@ alias d='docker'
 alias dc='docker-compose'
 alias tm='tmux'
 alias rd='rm -rf'
-alias downloads='cd ~/Downloads/'
+alias dl='cd ~/Downloads/'
+alias dot='cd ~/.dotfiles/'
 alias myip='curl ip-api.com'
-message() {
+function message() {
     osascript -e 'tell application "Messages" to send "'${2}'" to buddy "'${1}'"'
 }
-matrix() {
+function matrix() {
 printf "\e[32m\n"
 while :
 do
