@@ -3,6 +3,7 @@
 	email = mewil@umich.edu
 
 [alias]
+	unpushed = log --branches --not --remotes --no-walk --decorate --oneline
 	exec = ! "exec"
 	st = status -sb
 	br = branch -vv
