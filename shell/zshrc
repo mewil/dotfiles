@@ -6,6 +6,7 @@ export LC_ALL=C
 export LANG=C
 export CLICOLOR=1
 export LINKS_REPO="mewil/codex"
+export GPG_TTY=$(tty)
 
 # PATH
 export GOPATH=$HOME/go/

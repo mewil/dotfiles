@@ -108,3 +108,7 @@
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore
+[gpg]
+	program = gpg
+[commit]
+	gpgsign = true
