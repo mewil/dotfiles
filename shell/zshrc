@@ -21,7 +21,6 @@ export PATH=$PATH:/opt/local/bin:/opt/local/sbin
 antigen use oh-my-zsh
 
 antigen bundle aws
-antigen bundle cargo
 antigen bundle command-not-found
 antigen bundle common-aliases
 antigen bundle copyfile
@@ -43,7 +42,6 @@ antigen bundle python
 antigen bundle react-native
 antigen bundle ripgrep
 antigen bundle rust
-antigen bundle rustup
 antigen bundle tmux
 antigen bundle yarn
 antigen bundle z
@@ -53,7 +51,7 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 
 case `uname` in
   Darwin)
-    antigen bundle osx
+    antigen bundle macos
     antigen bundle brew
   ;;
 esac
