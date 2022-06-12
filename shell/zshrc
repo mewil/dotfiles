@@ -17,6 +17,7 @@ export PATH=$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin
 export PATH=$PATH:/Applications/Server.app/Contents/ServerRoot/usr/sbin:/Library/Frameworks/Mono.framework/Versions/Current/Commands
 export PATH=$PATH:/Applications/Wireshark.app/Contents/MacOS:$HOME/go/bin
 export PATH=$PATH:/opt/local/bin:/opt/local/sbin
+export PATH=$PATH:$HOME/Library/Python/3.8/bin
 
 antigen use oh-my-zsh
 
